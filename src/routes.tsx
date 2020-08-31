@@ -33,7 +33,9 @@ const Routes: React.FC = () => (
         fontFamily: 'roboto_400',
         fontSize: 11,
         marginTop: 5
-      }
+      },
+      inactiveTintColor: colors.black,
+      activeTintColor: colors.purple
     }}
 
     >
