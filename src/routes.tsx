@@ -15,7 +15,7 @@ const Routes: React.FC = () => (
     <Navigator
     tabBarOptions={{
       style:{
-        height: 60,
+        height: 64,
         backgroundColor: colors.primary,
         borderTopWidth: 0,
 

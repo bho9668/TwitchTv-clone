@@ -1,13 +1,25 @@
-import React from 'react';
+import React,{useMemo} from 'react';
 import { Text } from 'react-native';
+import {Wrapper,  Container, Main } from './styles';
 
-import { Container } from './styles';
+interface Item{
+  key: string;
+  render: ()=> JSX.Element ;
+  isTitle?: boolean;
+}
+
 
 const Following: React.FC = () => {
+useMemo(()=>{
+
+},[])
+
   return (
+    <Wrapper>
     <Container>
-      <Text>Following</Text>
+      <Main/>
     </Container>
+    </Wrapper>
   );
 };
 
