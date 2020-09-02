@@ -6,7 +6,7 @@ import {
   CategoryStatus,
   RedCircle,
   Info,
-  List
+  List,
 } from './styles';
 import data from './data';
 
@@ -15,26 +15,24 @@ interface ItemProps {
 }
 
 const CategoryList: React.FC = () => {
-  const CategoryItem: React.FC<ItemProps> = ({item}) => (
+  const CategoryItem: React.FC<ItemProps> = ({ item }) => (
     <CategoryContainer>
-    <CategoryImg source={item.source}/>
-    <CategoryName numberOfLines={1} >
-   {item.name}
-    </CategoryName>
-    <CategoryStatus>
-    <RedCircle/>
-    <Info >51.9k</Info>
-    </CategoryStatus>
+      <CategoryImg source={item.source} />
+      <CategoryName numberOfLines={1}>{item.name}</CategoryName>
+      <CategoryStatus>
+        <RedCircle />
+        <Info>51.9k</Info>
+      </CategoryStatus>
     </CategoryContainer>
-    )
+  );
 
-    return (
-      <List>
-      {data.map( (ListItem)=> (
-        <CategoryItem key={ListItem.name} item={ListItem}/>
-       ) )}
-      </List>
-      );
-    };
+  return (
+    <List>
+      {data.map(ListItem => (
+        <CategoryItem key={ListItem.name} item={ListItem} />
+      ))}
+    </List>
+  );
+};
 
-    export default CategoryList;
+export default CategoryList;

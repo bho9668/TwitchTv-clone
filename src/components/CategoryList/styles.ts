@@ -4,41 +4,39 @@ import colors from '../../styles/colors';
 export const List = styled.ScrollView.attrs({
   horizontal: true,
 })`
-padding: 8px 0 24px;
+  padding: 8px 0 24px;
 `;
 
 export const CategoryContainer = styled.TouchableOpacity`
-margin-right: 10px;
+  margin-right: 10px;
 `;
 
 export const CategoryImg = styled.Image`
-width: 95px;
-height: 130px;
+  width: 95px;
+  height: 130px;
 `;
 export const CategoryName = styled.Text`
-margin-top: 5px;
-max-width: 98px;
-color: ${colors.black};
-font-family: roboto_700;
-font-size: 13.5px;
-
+  margin-top: 5px;
+  max-width: 98px;
+  color: ${colors.black};
+  font-family: roboto_700;
+  font-size: 13.5px;
 `;
 export const CategoryStatus = styled.View`
-flex-direction: row;
-align-items: center;
-
+  flex-direction: row;
+  align-items: center;
 `;
 
 export const RedCircle = styled.View`
-background: ${colors.red};
-width: 9px;
-height: 9px;
-border-radius: 4.5px;
+  background: ${colors.red};
+  width: 9px;
+  height: 9px;
+  border-radius: 4.5px;
 `;
 
 export const Info = styled.Text`
-margin-left: 4px;
-padding-bottom: 1px;
-color: ${colors.gray};
-font-family: roboto_500;
+  margin-left: 4px;
+  padding-bottom: 1px;
+  color: ${colors.gray};
+  font-family: roboto_500;
 `;
