@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Following from './pages/Following';
@@ -7,9 +7,7 @@ import ComingSoon from './pages/ComingSoon';
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import colors from './styles/colors';
 
-
 const { Navigator, Screen } = createBottomTabNavigator();
-
 const Routes: React.FC = () => (
   <NavigationContainer>
     <Navigator
@@ -25,14 +23,14 @@ const Routes: React.FC = () => (
         justifyContent: `center`,
       },
       iconStyle:{
-        flex: 0,
         width: 20,
         height: 20,
+        marginBottom: 0
       },
       labelStyle:{
         fontFamily: 'roboto_400',
         fontSize: 11,
-        marginTop: 5
+        marginBottom: 8,
       },
       inactiveTintColor: colors.black,
       activeTintColor: colors.purple
