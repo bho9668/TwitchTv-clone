@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import colors from '../../styles/colors';
 
-export const List = styled.View`
+export const List = styled.ScrollView`
   padding: 8px 0 0;
 `;
 
@@ -12,7 +12,10 @@ export const ChannelContainer = styled.TouchableOpacity`
   padding-right: 14px;
   margin-bottom: 25px;
 `;
-export const LeftSide = styled.View``;
+export const LeftSide = styled.View`
+  flex-direction: row;
+  align-items: center;
+`;
 export const Avatar = styled.View`
   background: ${colors.tag};
   width: 48px;
@@ -35,7 +38,7 @@ export const Info = styled.Text`
 export const RightSide = styled.View``;
 
 export const WhiteCircle = styled.View`
-  color: ${colors.black};
+  background: ${colors.black};
   height: 9px;
   width: 9px;
   border-radius: 4.5px;
