@@ -11,7 +11,7 @@ import {
 import Routes from './src/routes';
 
 export default function App() {
-  let [fontsLoaded] = useFonts({
+  const [fontsLoaded] = useFonts({
     roboto_400: Roboto_400Regular,
     roboto_500: Roboto_500Medium,
     roboto_700: Roboto_700Bold,
