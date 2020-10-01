@@ -26,9 +26,9 @@
   </a>
 </p>
 
-
+<p  align="center">
  <img src="https://github.com/robertokbr/TwitchTv-clone/blob/master/.Github/channels.PNG" width="300"/> <img src="https://github.com/robertokbr/TwitchTv-clone/blob/master/.Github/home.PNG" width="300"/>
-
+</p>
 
 
 # 🚧 In progress
